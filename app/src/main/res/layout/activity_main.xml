@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/menu_top"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@color/yellow"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/button_curiosity"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:tint = "#FFFFFF"
+            android:layout_weight="1"
+            android:src="@drawable/image_curiosity" />
+
+        <ImageView
+            android:id="@+id/button_happiness"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/image_happiness" />
+
+        <ImageView
+            android:id="@+id/button_football"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/image_football" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/linear_center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/menu_top">
+
+        <TextView
+            android:id="@+id/text_welcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/cabin"
+            android:gravity="center"
+            android:text="@string/text_welcome"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/text_curiosity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/cabin"
+            android:gravity="center"
+            android:padding="22sp"
+            android:text="@string/text_curiosity"
+            android:textColor="@color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_below="@+id/text_curiosity"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="128dp"
+            android:background="@color/yellow"
+            android:elevation="8dp" />
+
+        <Button
+            android:id="@+id/button_new_phrase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="32dp"
+            android:backgroundTint="@color/yellow"
+            android:fontFamily="@font/cabin"
+            android:text="@string/text_button"
+            android:textColor="@color/black" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
